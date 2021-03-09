@@ -27,7 +27,7 @@ namespace Gibbed.Prototype.FileFormats.Pure3D
 {
     [KnownType(0x00010020)]
     // ReSharper disable InconsistentNaming
-    public class U00010020_PrimitiveGroup : BaseNode
+    public class PrimitiveGroup : BaseNode
         // ReSharper restore InconsistentNaming
     {
         public uint Version { get; set; }
