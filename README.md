@@ -7,3 +7,4 @@ Scarface The World Is Yours
 Prototype
 Prototype 2
 The application is still in alpha and it aims to to support Scarface The World Is Yours, Prototype, Prototype 2.
+Original Author of this application is Gibbed
