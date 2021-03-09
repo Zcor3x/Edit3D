@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net45;net40</TargetFrameworks>
+    <Company>Gibbed</Company>
+    <Authors>Gibbed</Authors>
+    <Description>http://gib.me/</Description>
+    <Copyright>Copyright © Gibbed 2019</Copyright>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gibbed.IO-main\Gibbed.IO.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="ThirdParty\squish_LICENSE.txt" Link="squish_LICENSE.txt" CopyToOutputDirectory="Never" />
+    <None Update="ThirdParty\squish32.dll" Link="squish32.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="ThirdParty\squish64.dll" Link="squish64.dll" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
