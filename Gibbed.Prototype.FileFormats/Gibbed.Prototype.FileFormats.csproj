@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{21E1F493-702A-4C68-8C78-DFB6D69CA337}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gibbed.Prototype.FileFormats</RootNamespace>
+    <AssemblyName>Gibbed.Prototype.FileFormats</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CementFile.cs" />
+    <Compile Include="Cement\Entry.cs" />
+    <Compile Include="Cement\Metadata.cs" />
+    <Compile Include="Colour.cs" />
+    <Compile Include="FourCC.cs" />
+    <Compile Include="G1zm0\DDSFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pure3DFile.cs" />
+    <Compile Include="Pure3D\Billboard.cs" />
+    <Compile Include="Pure3D\CompositeDrawable.cs" />
+    <Compile Include="Pure3D\CompositeDrawablePolySkinReference.cs" />
+    <Compile Include="Pure3D\Expression.cs" />
+    <Compile Include="Pure3D\ExpressionGroup.cs" />
+    <Compile Include="Pure3D\Geometry.cs" />
+    <Compile Include="Pure3D\Light Group.cs" />
+    <Compile Include="Pure3D\Light.cs" />
+    <Compile Include="Pure3D\NodeFactory.cs" />
+    <Compile Include="Pure3D\ParticleSystem.cs" />
+    <Compile Include="Pure3D\Registry2.cs" />
+    <Compile Include="Pure3D\ShaderVariableType.cs" />
+    <Compile Include="Pure3D\TextBibleHolder.cs" />
+    <Compile Include="Pure3D\Physics.cs" />
+    <Compile Include="Pure3D\PolySkin.cs" />
+    <Compile Include="Pure3D\ShaderProgram.cs" />
+    <Compile Include="Pure3D\ShaderTemplate.cs" />
+    <Compile Include="Pure3D\Skeleton.cs" />
+    <Compile Include="Pure3D\TextBibleStorage.cs" />
+    <Compile Include="Pure3D\TextureGlyph.cs" />
+    <Compile Include="Pure3D\TextureSource.cs" />
+    <Compile Include="Pure3D\KnownTypeAttribute.cs" />
+    <Compile Include="Pure3D\BaseNode.cs" />
+    <Compile Include="Pure3D\Texture.cs" />
+    <Compile Include="Pure3D\TexturePNG.cs" />
+    <Compile Include="Pure3D\TextureFont.cs" />
+    <Compile Include="Pure3D\TextureDDS.cs" />
+    <Compile Include="Pure3D\TypeIdConverter.cs" />
+    <Compile Include="Pure3D\Camera.cs" />
+    <Compile Include="Pure3D\NewShader.cs" />
+    <Compile Include="Pure3D\ShaderCode.cs" />
+    <Compile Include="Pure3D\ShaderGlobalVariable.cs" />
+    <Compile Include="Pure3D\U00010020_PrimitiveGroup.cs" />
+    <Compile Include="Pure3D\U00011016.cs" />
+    <Compile Include="Pure3D\U00011017.cs" />
+    <Compile Include="Pure3D\U00011018.cs" />
+    <Compile Include="Pure3D\U00011020.cs" />
+    <Compile Include="Pure3D\U00011115.cs" />
+    <Compile Include="Pure3D\U00019008.cs" />
+    <Compile Include="Pure3D\TextureGlyphList.cs" />
+    <Compile Include="Pure3D\TextureData.cs" />
+    <Compile Include="Pure3D\U00022004.cs" />
+    <Compile Include="Pure3D\U00022005.cs" />
+    <Compile Include="Pure3D\U00022006.cs" />
+    <Compile Include="Pure3D\Animation.cs" />
+    <Compile Include="Pure3D\U00121006.cs" />
+    <Compile Include="Pure3D\MetaObjectDefinition.cs" />
+    <Compile Include="Pure3D\MetaObjectData.cs" />
+    <Compile Include="Pure3D\FightDefinition.cs" />
+    <Compile Include="Pure3D\FightData.cs" />
+    <Compile Include="Pure3D\CompositeDrawableExpressionMixerReference.cs" />
+    <Compile Include="Pure3D\Unknown.cs" />
+    <Compile Include="Pure3D\ExpressionMixer.cs" />
+    <Compile Include="StreamHelpers.cs" />
+    <Compile Include="StringHelpers.cs" />
+    <Compile Include="Vector2.cs" />
+    <Compile Include="Vector3.cs" />
+    <Compile Include="Vector4.cs" />
+    <Compile Include="VectorTypeConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gibbed.IO-main\Gibbed.IO.csproj">
+      <Project>{047857BA-DAA3-4CA7-AFB8-A1B082B28C6A}</Project>
+      <Name>Gibbed.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gibbed.Squish-vs2017\Gibbed.Squish.csproj">
+      <Project>{242D0738-AA4C-4C9C-A218-891A8F55559C}</Project>
+      <Name>Gibbed.Squish</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pure3D\Scarface Decompiled.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
